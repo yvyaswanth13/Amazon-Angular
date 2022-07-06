@@ -1,0 +1,55 @@
+<p>user-address works!</p>
+
+<form class="mb-0" style="margin :25px">
+    <fieldset>
+
+      <br>
+      <label class="form-label" for="form9Example1">AddressLine1</label>
+            
+            <input type="text" [(ngModel)]="myaddress.addressLine1"  name="addressLine1"id="addressLine1" class="form-control input-custom" />
+            <label class="form-label" for="form9Example2">AddressLine-2</label>
+           
+            <input type="text" [(ngModel)]="myaddress.addressLine2" name="addressLine2" id="addressLine2" class="form-control input-custom" />
+            <label class="form-label" for="form9Example3">City</label>
+            
+            <input type="text" [(ngModel)]="myaddress.city" name="city" id="city" class="form-control input-custom" />
+            <label class="form-label" for="form9Example4">Zip</label>
+            
+            <input type="text" [(ngModel)]="myaddress.postalCode" name="postalCode" id="postalCode" class="form-control input-custom" />
+            <label class="form-label" for="form9Example6">Country</label>
+          
+            <input type="text" [(ngModel)]="myaddress.country" name="country" id="country" class="form-control input-custom" />
+            
+            <label class="form-label" for="mobile">Phone</label>
+          
+            <input type="text" [(ngModel)]="myaddress.mobile" name="mobile" id="mobile" class="form-control input-custom" />
+          
+            <label class="form-label" for="contactPerson">Deliver TO</label>
+          
+            <input type="text" [(ngModel)]="myaddress.contactPerson" name="contactPerson" id="contactPerson" class="form-control input-custom" />
+          
+            <label class="form-label" for="mailId">Email</label>
+         
+            <input type="email" [(ngModel)]="myaddress.mailId" name="mailId"id="mailId" class="form-control input-custom" />
+           
+      <h3>Payment Mode</h3>
+      <h4>
+      <!-- <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="COD" />
+          <label class="form-check-label " for="inlineCheckbox1">Cash On Delivery</label>
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
+          <label class="form-check-label" for="inlineCheckbox2">Pay Now</label>
+        </div>
+         -->
+      </h4>
+        <hr>
+      <div class="float-end ">
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-rounded"
+          style="background-color:#0062CC;" (click)="goToOrders()">Confirm</button>
+      </div>
+      <br>
+    </fieldset>
+
+    </form>
+  
