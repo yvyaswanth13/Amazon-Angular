@@ -11,6 +11,9 @@ import { OrderServiceService } from './order-service.service';
   providedIn: 'root'
 })
 export class OrderAPIService {
+  deleteUser(id: number) {
+    throw new Error('Method not implemented.');
+  }
 
   public message:any;
   public getOrders(){
@@ -44,6 +47,11 @@ export class OrderAPIService {
  {
   return this.http.get("http://localhost:10649/Orders/GetOrderItems?oid="+id);
   
+ }
+ public deleteItem(id:number)
+ {
+  return this.http.delete("http://localhost:10649/Orders/DeleteOrderItems?id="+id);
+ 
  }
  
 }
